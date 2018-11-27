@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic 2 Exploration</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+<nav class="nav nav-pills navbar-static-top navbar-inverse">
+
+  <li role="presentation" class="active"><a href="index.html">Home</a></li>
+  <li role="presentation"><a href="topic1.html">Topic 1</a></li>
+  <li role="presentation"><a href="topic2.html">Topic 2</a></li>
+   <li role="presentation"><a href="topic3.html">Topic 3</a></li>
+</nav>
+
+
+<h1> Noah Menikefs</h1>
+<p> Topic 2 Exploration <p>
+
+<div class="jumbotron">
+  <p>
+  <b>2.1.2 </b> Describe primary memory. Distinguish between random access memory (RAM) and read-only memory (ROM), and their use in primary memory
+ </p>
+  <hr class="my-4">
+  <p> <b>2.1.3</b> Explain the use of cache memory
+</div>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Primary Memory</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="Primary">
+  <p>Primary memory can be defined as the computer memory directly accessed by the central processing unit (CPU).
+It allows a processor to access running applications and services that are temporarily stored in a specific memory location.
+This includes the system ROM (read-only memory) and in most cases, primary memory refers to system RAM (random access memory).
+When a computer starts, the primary memory loads the running applications, which includes the base operating system, user interface and user-installed and running software utility.
+Primary memory is considered faster than secondary memory.
+Stores data in binary.
+Secondary memory, unlike primary, cannot be accessed by the CPU and contains data kept on a long-term basis.
+</p>
+</div></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+       RAM</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="RAM">
+  <p>Contains the data and instructions the computer has loaded since starting up and everything the user has opened/loaded. 
+RAM is the main place for storing instructions and data whilst a program is being executed.
+Random access memory (RAM) is volatile which means it loses its contents if power is lost.
+RAM is usually measured in gigabytes. The more gigabytes of RAM a computer has, the more programs and operations it can handle at the same time.
+Typical computers might have the following RAM:
+(Raspberry Pi: 512MB, smartphone: 1GB, laptop: 16GB, games console: 8GB)
+Each memory location has its own address so data can be easily accessed later when needed
+RAM has a word size which determines how many bits the CPU can manipulate at once.
+Bits are used to measure the amount of data a CPU can transfer with one instruction over a bus. A bus is the wires on the motherboard which data travels from one place to another
+Increasing the word size means more data can be manipulated at a greater speed. It also means that the CPU can keep track of a larger range of memory locations.
+RAM can be categorized as dynamic or static
+</p>
+<br>
+ <h4>Dynamic Ram vs Static Ram</h4>
+  <p> Dynamic RAM is the most common type of memory in use today.
+Inside a dynamic RAM chip, each memory cell holds one bit of information and is made up of two parts: a transistor and a capacitor.
+A transistor is a microscopic device used to open and close circuits to communicate electrical signals
+A capacitor is a circuit component which stores electrical energy in computer memory cells
+The capacitors must be refreshed before it is discharged. This refresh operation happens automatically thousands of times per second.
+This refresh operation is where dynamic RAM gets its name. Dynamic RAM has to be dynamically refreshed all of the time or it forgets what it is holding.
+A disadvantage of DRAM is that all the refreshing takes time and slows down the memory.
+Static Ram (SRAM) Uses a group of transistors combined for each bit of data.
+They do not lose the charge while in use so SRAM is much faster than DRAM. 
+However, because it has more parts, a static memory cell takes a lot more space on a chip than a dynamic memory cell.
+</p>
+</div>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        ROM</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body"><div class="ROM">
+  <p>Computer memory on which data has been pre-recorded.
+Mostly once the data has been written onto a ROM chip, it can not be removed, only read.
+ROM retains its contents even when the computer is turned off, thus it is non-volatile.
+Personal computers contain a small amount of ROM that stores critical programs such as the program that boots the computer
+Stores the Basic Input Output System (BIOS).
+BIOS is a small program that allows the computer to find the operating system to start the computer after power is restored
+After the boot, the OS controls the CPU and supplies the programs to run.
+Suitable for storing data which is not expected to need modification for the life of the device.
+ROM can be categorized as programmable or electrically erasable.
+</p>
+<br>
+  <h4>Types of ROM</h4>
+  <p>Programmable read-only memory (PROM) gets manufactured blank.
+Chips can be bought and programmed easily by the programmer.
+Each bit of memory is stored with “fusible links,” and you “burn” the fuses to set that bit to a 1 or 0.
+Can only be programmed once and cannot be modified afterwards. PROMS have inexpensive chips.
+</p>
+  <p>Electrically erasable programmable read-only memory (EEPROM) is firmware that can be modified or erased. An EEPROM chip has to be erased and reprogrammed in its entirety, not selectively. This data may be stored, even without a permanent power source. They are popular in PCs and smartphones.</p>
+</div></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Summary</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="Summary">
+  <p>RAM is volatile, whereas ROM is non-volatile. RAM contains programs that have been loaded since booting up, whereas ROM contains the BIOS which aids the OS in booting up.RAM can be upgraded, whereas ROM is difficult to modify
+</p>
+</div>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        Cache Memory</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="Cache">
+  <p>Cache memory is a small-sized type of volatile computer memory.
+Provides high-speed data access to a processor and stores frequently used computer programs, applications and data.
+It stores and retains data only until a computer is powered up.
+It is the fastest memory in a computer, and is typically integrated onto the motherboard and directly embedded in the processor or main random access memory (RAM).
+When a processor requests data that already has an instance in the cache memory, it does not need to go to the main memory or the hard disk to get the data.
+</p>
+</div>
+</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html> 
