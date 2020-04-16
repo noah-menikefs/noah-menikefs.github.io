@@ -8,32 +8,28 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+ 
 </head>
 <body>
 
 
 
-<nav class="nav nav-pills navbar-static-top navbar-inverse sticky">
+<!-- <nav class="nav nav-pills navbar-static-top navbar-inverse sticky">
 
   <li role="presentation" class="active"><a href="index.html">Home</a></li>
   <li role="presentation"><a href="topic1.html">Topic 1</a></li>
   <li role="presentation"><a href="topic2.html">Topic 2</a></li>
   <li role="presentation"><a href="topic3.html">Topic 3</a></li>
   <li role="presentation"><a href="english.html">English News Bias Project</a></li>
-</nav>
+</nav> -->
 
-  <h1> Noah Menikefs</h1>
-<p> Title Page <p>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
-
-
-<script type="text/javascript" src="script.js"></script>
+  <h1 id="myName"> Noah Menikefs</h1>
+  <input type="textfield" id="status"/>
+  <button id="saveButton">Save</button>
+  <button id="loadButton">Load</button>
+  <script src="script.js"></script>
 
 </body>
 
