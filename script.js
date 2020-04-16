@@ -14,9 +14,6 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore();
 
-var provider = new firebase.auth.GoogleAuthProvider();
-// provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-
 const docRef = firestore.doc("samples/sandwichData");
 const outputHeader = document.querySelector("#myName");
 const inputTextField = document.querySelector("#status");
