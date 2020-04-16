@@ -23,6 +23,16 @@ p{
 	font-size: 17px;
 }
 
+li{
+  padding: 20px;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .flip-box {
 
   background-color: transparent;

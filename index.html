@@ -12,7 +12,9 @@
 </head>
 <body>
 
-<nav class="nav nav-pills navbar-static-top navbar-inverse">
+
+
+<nav class="nav nav-pills navbar-static-top navbar-inverse sticky">
 
   <li role="presentation" class="active"><a href="index.html">Home</a></li>
   <li role="presentation"><a href="topic1.html">Topic 1</a></li>
@@ -27,4 +29,29 @@
 
 
 </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCuB-2Z4UPLutFe68XD1tWT9VnIZ4_xx-4",
+    authDomain: "test-b0203.firebaseapp.com",
+    databaseURL: "https://test-b0203.firebaseio.com",
+    projectId: "test-b0203",
+    storageBucket: "test-b0203.appspot.com",
+    messagingSenderId: "101942352507",
+    appId: "1:101942352507:web:aade72c501a5c023c8a0de",
+    measurementId: "G-Q27358MKXF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </html>
