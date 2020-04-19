@@ -1,6 +1,5 @@
-
 body{
-	background-color: rgb(235,235,235);
+	background-color: #f0f2f4;
 }
 
 .jumbotron p{
@@ -59,6 +58,10 @@ a:hover:after {
 
 .push{
   margin-left: auto;
+}
+
+.bg-light{
+  background-color: black;
 }
 
 
