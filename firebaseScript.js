@@ -20,7 +20,7 @@ loadButton.addEventListener("click", function(){
 	docRef.get().then(function (doc){
 		if (doc && doc.exists){
 			const myData = doc.data();
-			outputHeader.innerText = "Hot dog status: " + myData.hotDogStatus;
+			outputHeader.innerText = "Status: " + myData.hotDogStatus;
 		}
 	}).catch(function (error){
 		console.log("Got an error: ", error);
@@ -40,7 +40,7 @@ getRealtimeUpdates = function(){
 		if (doc && doc.exists){
 			const myData = doc.data();
 			console.log("Check out this document I received", doc);
-			outputHeader.innerText = "Hot dog status: " + myData.hotDogStatus;
+			outputHeader.innerText = "Status: " + myData.hotDogStatus;
 		}
 	});
 }
