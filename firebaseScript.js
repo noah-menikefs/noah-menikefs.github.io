@@ -1,19 +1,3 @@
-
-// Initialize Firebase
-var firebaseConfig = {
-  apiKey: "AIzaSyCuB-2Z4UPLutFe68XD1tWT9VnIZ4_xx-4",
-  authDomain: "test-b0203.firebaseapp.com",
-  databaseURL: "https://test-b0203.firebaseio.com",
-  projectId: "test-b0203",
-  storageBucket: "test-b0203.appspot.com",
-  messagingSenderId: "101942352507",
-  appId: "1:101942352507:web:aade72c501a5c023c8a0de",
-  measurementId: "G-Q27358MKXF"
-};
-
-firebase.initializeApp(firebaseConfig);
-var firestore = firebase.firestore();
-
 const docRef = firestore.doc("samples/sandwichData");
 const outputHeader = document.querySelector("#myName");
 const inputTextField = document.querySelector("#status");
@@ -41,6 +25,14 @@ loadButton.addEventListener("click", function(){
 	}).catch(function (error){
 		console.log("Got an error: ", error);
 	});
+});
+
+// setup materialize components
+document.addEventListener('DOMContentLoaded', function() {
+
+  var modals = document.querySelectorAll('.modal');
+  M.Modal.init(modals);
+
 });
 
 getRealtimeUpdates = function(){
