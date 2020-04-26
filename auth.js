@@ -12,7 +12,6 @@ signupForm.addEventListener('submit', (e) => {
     console.log(cred.user);
     // close the signup modal & reset form
     const modal = document.querySelector('#modal-signup');
-    M.Modal.getInstance(modal).close();
     signupForm.reset();
   });
 });
@@ -31,7 +30,6 @@ loginForm.addEventListener('submit', (e) => {
     console.log(cred.user);
     // close the signup modal & reset form
     const modal = document.querySelector('#modal-login');
-    M.Modal.getInstance(modal).close();
     loginForm.reset();
   });
 
